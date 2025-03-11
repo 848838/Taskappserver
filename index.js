@@ -26,13 +26,14 @@ const JWT_SECRET = "hvdvay6ert72839289()aiyg8t87qt72393293883uhefiuh78ttq3ifi782
 // Use middleware
 app.use(express.json());
 app.use(cors({
-    origin:"taskappfrontend-eight.vercel.app"
-
+    origin: ["https://taskappfrontend-eight.vercel.app", "http://localhost:3000"],
+    credentials: true
 }));
 
 
+
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017', {
+mongoose.connect('mongodb://fxabhi988:<db_password>@<hostname>/?ssl=true&replicaSet=atlas-xr2zr7-shard-0&authSource=admin&retryWrites=true&w=majority&appName=taskappmanagement', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {
