@@ -228,6 +228,6 @@ app.get('/users', async (req, res) => {
     }
 });
 // Start the server
-app.listen(port, () => {
-    console.log(`App listening on port ${port}`);
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
