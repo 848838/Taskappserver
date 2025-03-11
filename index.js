@@ -13,7 +13,8 @@ const Task = require('./Modals/Task');
 
 
 const app = express();
-const port = 5000;
+const PORT = process.env.PORT || 5000;
+
 
 const JWT_SECRET = "hvdvay6ert72839289()aiyg8t87qt72393293883uhefiuh78ttq3ifi78272jdsds039[]]pou89ywe";
 
@@ -24,10 +25,8 @@ const JWT_SECRET = "hvdvay6ert72839289()aiyg8t87qt72393293883uhefiuh78ttq3ifi782
 
 // Use middleware
 app.use(express.json());
-app.use(cors({
-    origin:"taskappfrontend-eight.vercel.app"
+app.use(cors());
 
-}));
 
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost:27017', {
