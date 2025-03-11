@@ -33,7 +33,7 @@ app.use(cors({
 
 
 // Connect to MongoDB
-mongoose.connect('mongodb://fxabhi988:<db_password>@<hostname>/?ssl=true&replicaSet=atlas-xr2zr7-shard-0&authSource=admin&retryWrites=true&w=majority&appName=taskappmanagement', {
+mongoose.connect('mongodb://fxabhi988:oHE8bdkolipC6vN@fxabhi988/?ssl=true&replicaSet=atlas-xr2zr7-shard-0&authSource=admin&retryWrites=true&w=majority&appName=taskappmanagement', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {
